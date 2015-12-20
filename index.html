@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Barbershop Borodinski</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="img/favicon.ico" type="image/ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/min.style.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- Верстаем хедер-->
+    <div class="header">
+        <div class="layout-center-wrapper clearfix">
+            <ul class="top-menu">
+                <li><a class="white" href="index.html">Главная</a></li>
+                <li><a href="index.html">Информация</a></li>
+                <li><a href="index.html">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="index.html">Контакты</a></li>
+            </ul>
+            <div class="account-menu">
+                <a class="account-menu-enter" href="#">Вход</a>
+            </div>
+        </div>
+    </div>
+    <!-- закончили хедер -->
+    <!-- Верстаем главную часть  -->
+    <div class="layout-center-wrapper">
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" width="368" height="204" alt="Barbershop Borodinski"></a>
+        </div>
+        <ul class="features clearfix">
+            <li>
+                <div class="feature-title">Быстро</div>
+                <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+            </li>
+            <li>
+                <div class="feature-title">Круто</div>
+                <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+            </li>
+            <li>
+                <div class="feature-title">Дорого</div>
+                <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+            </li>
+        </ul>
+        <div class="index-section clearfix">
+            <div class="index-left-column">
+                <div class="index-section-title">Новости</div>
+                <ul class="index-news">
+                    <li>
+                        <a href="#">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+                        <br>
+                        <span class="date">25 сентября</span>
+                    </li>
+                    <li>
+                        <a href="#">В нашей команде пополнение, Борис «Бритва» Стригунец, обладетель множетсва титулов и наград пополнил наши стройные ряды</a>
+                        <br>
+                        <span class="date">19 сентября</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn">Все новости</a>
+            </div>
+            <div class="index-right-column">
+                <div class="index-section-title">Фотогалерея</div>
+                <div class="gallery">
+                    <div class="gallery-items">
+                        <div class="gallery-item gallery-item-active"><img src="img/pic1.png" width="286" height="164" alt="Интерьер"></div>
+                        <div class="gallery-item"><img src="img/pic1.png" width="286" height="164" alt="Интерьер"></div>
+                        <div class="gallery-item"><img src="img/pic1.png" width="286" height="164" alt="Интерьер"></div>
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="btn btn-prev">Назад</button>
+                        <button class="btn btn-next">Вперед</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- закончили верхний блок-->
+        <div class="index-section clearfix">
+            <div class="index-left-column">
+                <div class="index-section-title">Контактная информация</div>
+                <ul class="index-contacts">
+                    <li>Barbershop «Borodinski»
+                        <br> Адрес: г. Москва, ул. Собаки Павлова, д. 13
+                        <br> Телефон: +7 (495) 666-02-666</li>
+                    <li>Время работы:
+                        <br> пн — пт: с 10:00 до 22:00
+                        <br> сб — вс: с 10:00 до 19:00</li>
+                </ul>
+                <a href="#" class="btn open-map">Как проехать</a>
+                <a href="#" class="btn">Обратная связь</a>
+            </div>
+            <div class="index-right-column">
+                <div class="index-section-title">Записаться</div>
+                <p>Укажите желаемую дату и время и мы свяжемся
+                    <br> с Вами для подтверждения брони</p>
+                <form class="index-form" action="#" method="post">
+                    <fieldset>
+                        <input type="text" name="date" placeholder="Дата">
+                        <input type="text" name="time" placeholder="Время">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="text" name="phone" placeholder="Телефон">
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- закончили нижний блок -->
+    </div>
+    <!-- закончили весь блок от хедера до футера -->
+    <!-- popup-форма связи -->
+    <div class="login-popup">
+        <a href="#" class="login-popup-close">Закрыть ✕</a>
+        <div class="index-section-title">Личный кабинет</div>
+        <p>Введите пожалуйста свой логин и пароль
+            <br>Если вы забыли пароль
+            <form class="login-form" action="/auth" method="post">
+                <input class="login-field" type="text" name="login" placeholder="Логин">
+                <input class="password-field" type="password" name="pasword" placeholder="Пароль">
+                <a class="restore" href="/restore">Я забыл пароль</a>
+                <label>
+                    <input type="checkbox" name="remember"> Запомните меня</label>
+                <input type="submit" value="Войти">
+            </form>
+    </div>
+    <!-- закончили форму связи -->
+    <!-- Карта -->
+    <div class="modal-content-map">
+        <button class="modal-content-close" title="Закрыть">Закрыть</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2239.602752989545!2d37.645548000000005!3d55.85220799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JzQvtGB0LrQstCwLCDQs9C-0YDQvtC0INCc0L7RgdC60LLQsCzRg9C7LtGB0L7QsdCw0LrQuCDQv9Cw0LLQu9C-0LLQsCAxMw!5e0!3m2!1sru!2sru!4v1442166415213" width="766" height="561" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- Закончили карту -->
+    <!-- Верстаем футер -->
+    <div class="footer">
+        <div class="layout-center-wrapper clearfix">
+            <div class="contacts-address">
+                Barbershop «Borodinski»
+                <br> Адрес: г. Москва, ул. Собаки Павлова, д. 13
+                <br> Телефон: +7 (495) 666-02-666
+            </div>
+            <div class="social-buttons">
+                <span>Давайте дружить!</span>
+                <a href="http://vk.com" class="btn-social btn-social-vk">Вконтакте</a>
+                <a href="http://facebook.com" class="btn-social btn-social-fb">Facebook</a>
+                <a href="http://instagram.com" class="btn-social btn-social-inst">Instagram</a>
+            </div>
+            <div class="copyright">
+                Дизайн сайта:
+                <br>
+                <a class="btn footer-btn" href="http://glukhanko.ru/">glukhanko.ru</a>
+            </div>
+        </div>
+    </div>
+    <!-- Закончили футер -->
+    <!-- Верстаем скрипт для формы -->
+    <script src="js/min.js"></script>
+ </body>
+</html>
